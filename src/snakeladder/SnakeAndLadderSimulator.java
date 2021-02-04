@@ -14,8 +14,8 @@ public class SnakeAndLadderSimulator {
 		// Variables
 		int pos1 = 0;
 		int counter = 0;
-		
-		
+		int winningDicesRolled =0;
+				
 		while ( pos1 != WINNING_POSITION )
 		{
 		
@@ -49,11 +49,12 @@ public class SnakeAndLadderSimulator {
 			// Movement above Winning Position
 			else if ( pos1 > WINNING_POSITION )
 			{
+				winningDicesRolled++;
 				pos1 = pos1 - counter;
-			}
-				
-			
+			}	
+			System.out.println("After Rolling dice your Current position is "+pos1);
 		}	
 	System.out.println("Player 1 has won by reaching the winning position "+pos1);
+	System.out.println("Number of times dices was played to win the game is "+winningDicesRolled);
 	}
 }
