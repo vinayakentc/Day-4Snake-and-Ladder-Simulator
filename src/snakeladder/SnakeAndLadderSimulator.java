@@ -6,7 +6,6 @@ public class SnakeAndLadderSimulator {
 	{
 		//  Player 1 
 		// Constants
-		
 		final int NOPLAY = 0;
 		final int LADDER = 1;
 		final int SNAKE = 2;
